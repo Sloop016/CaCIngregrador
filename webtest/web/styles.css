@@ -1,0 +1,392 @@
+/* variables */
+:root {
+    /* pallette */
+    --nav-background:rgb(53, 58, 64);
+    --nav-gray: rgb(154,158,161);
+    --nav-green: rgb(42,163,68);
+    --nav-link-hover:#ccc;
+    --nav-link-buy:rgb(9, 223, 56);
+    --form-placeholder: #888;
+    --title-gray:#555;
+    --color-white:#fff;
+    --color-black:rgb(0,0,0);
+    --btn-success:rgb(41, 167, 68);
+    --btn-submit:#96c93e;
+    --carousel-color-fusion:rgb(60, 60, 60);
+    --background-places:#353a40;
+    --background-footer:#1d4358;
+    --footer-link-hover:#58a6d6;
+    --border-blue:rgb(0,123,255);
+    --border-light-blue:rgb(23,162,184);
+    --border-yellow:rgb(255,193,7);
+}
+
+
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Navbar */
+
+a {
+    text-decoration: none;
+}
+
+nav{
+    background: var(--nav-background);
+}
+
+#container-fluid {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+
+.nav-img {
+    width: 80px;
+}
+
+.brand:hover, .nav--link:hover {
+    color: var(--nav-link-hover);
+} 
+
+.nav--link {
+    color: var(--nav-gray);
+}
+
+.brand, .nav-link-white {
+    color: var(--color-white);
+}
+
+
+.nav-link-green {
+    color: var(--nav-green);
+}
+
+
+.nav-link-green:hover {
+    color: var(--nav-link-buy);
+}  
+
+.collapse {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+/* Hero */
+
+.hero {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 8vw;
+    color: var(--color-white);
+} 
+
+.hero p {
+    width: 45%;
+    text-align: end;
+}
+
+.btn-success {
+    background-color: var(--btn-success);
+    border: 1px solid var(--btn-success);
+}
+
+.hero-item-1 {
+    background-image: url(Imgs/ba1.jpg);
+    background-color: var(--carousel-color-fusion);
+    background-blend-mode: soft-light;
+}
+
+
+.hero-item-2 {
+    background-image: url(Imgs/ba2.jpg);
+    background-color: var(--carousel-color-fusion);
+    background-blend-mode: soft-light;
+}
+
+.hero-item-3 {
+    background-image: url(Imgs/ba3.jpg);
+    background-color: var(--carousel-color-fusion);
+    background-blend-mode: soft-light;
+}
+
+/* Cards-menu */
+.cards-title   {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+.cards-title p {  
+    margin:0;
+    font-size: .8rem;
+    color: var(--title-gray);
+    
+}
+.cards-title, .cards-menu{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.cards-menu{
+    margin-bottom: 2rem;
+}
+
+.card-body h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card-body p {
+    font-size: 0.9rem;
+    color: var(--title-gray);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.card {
+    padding: 0;
+}
+
+/* Places */
+
+.places-text {
+    background-color: var(--background-places);
+    width: 100%;
+    border-left: 1px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.places-text p {
+    font-size: 0.9rem;
+}
+
+
+.img-places{
+    width: 100%;
+    height: 100%;
+}
+
+/* Form */
+.form-text{
+    color: var(--color-black);
+}
+
+.form-text span {
+    border-bottom: 2px dotted var(--color-black);
+}
+
+.form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-submit {
+    width: 100%;
+    background-color: var(--btn-submit);
+    border: 1px solid var(--btn-submit);
+}
+
+.form > p {
+    font-size: .8rem;
+    color: var(--title-gray);
+}
+
+.form-placeholder, .form-control::placeholder{
+    color: var(--form-placeholder);
+}
+
+
+
+/* footer */
+footer{
+    margin-top: 1rem;
+    background-color: var(--background-footer);
+    padding: 1rem 8rem 1rem;
+    text-align: center;
+}
+footer a{
+    color: var(--color-white);
+    font-size: .91rem;
+}
+
+footer a:hover {
+    color: var(--footer-link-hover);
+}
+
+/* Secondary pages */
+
+/* Tickets */
+
+/* Ticket Nav */
+.nav-link-ticket-green{
+    color: var(--nav-link-buy);
+}
+
+.nav-link-ticket-green:hover {
+    color: var(--nav-green);
+}
+
+/* Ticket Cards */
+.ticket-card-container {
+    margin:2rem 18rem 0.4rem 18rem;
+}
+
+.ticket-card {
+    text-align: center;
+}
+
+.text-gray {
+    color: var(--form-placeholder);
+}
+
+.border-blue {
+    border: 2px solid var(--border-blue);
+}
+
+.border-light-blue {
+    border: 2px solid var(--border-light-blue);
+}
+
+.border-yellow {
+    border: 2px solid var(--border-yellow);
+}
+
+
+/* Ticket Form */
+.ticket-form{
+    margin: 0 17.25rem;
+}
+
+/*Orators Page*/
+.imagen{
+    width:100%;
+}
+.half-image{
+    width: 50%;
+}
+.hide{
+    display:none;
+}
+.ease-animation {
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+.circle {
+    border-radius: 50%;
+    transition: border-radius 0.12s ease-in-out;
+}
+
+.semiCircle{
+    border-radius: 0.5rem;
+}
+
+.circleTransition {
+    border-radius: 0.5rem;
+    transition: border-radius 0.12s ease-in-out;
+}
+
+/* become an orator */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+.content {
+    flex: 1;
+}
+.show-clickable {
+    cursor: pointer;
+}
+
+
+
+/* Media queries */
+
+/* main page */
+@media screen and (max-width:995px){
+    .collapse{
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width:600px) {
+    /* Navbar changes */
+    #container-fluid{
+        margin: 0;
+    }
+    
+    /* hero changes */
+    .hero p {
+        width: 100%;
+    }
+    .hero {
+        padding: 0 3rem;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width:576px){
+    /* cards changes */
+    .card{
+        margin: 0 auto;
+    }
+}
+
+/* Secondary pages */
+/* Ticket */
+
+@media screen and (max-width:1103px){
+    .ticket-card-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .ticket-form{
+        margin: 0 10rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    .ticket-card-container{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .ticket-form{
+        margin: 0 9.2rem;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .ticket-card-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .ticket-form{
+        margin: 0 0.7rem;
+    }
+}
+
+/* Orators */
+@media screen and (max-width:991px) {
+    .half-image{
+        width: 100%;
+    }
+}
